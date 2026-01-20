@@ -4,34 +4,8 @@ import ScrambledText from "../public/addons_comp/colorbends";
 import TrueFocus from "../public/addons_comp/trueFocus";
 import ElectricBorder from "../public/addons_comp/electricBorder";
 import Antigravity from "../public/addons_comp/antigravity";
-import PrismaticBurst from "../public/addons_comp/prismatic";
-import Plasma from "../public/addons_comp/plasma";
 import Dock from "../public/addons_comp/dock";
-import { Home, Archive, User, Settings, MoveUp } from "lucide-react";
 
-type Project = {
-  title: string;
-  desc: string;
-  link: string;
-};
-
-const projects: Project[] = [
-  {
-    title: "Project One",
-    desc: "A full-stack app with modern UI and fast backend.",
-    link: "https://github.com/yourname/project1",
-  },
-  {
-    title: "Project Two",
-    desc: "AI powered dashboard with smooth UX.",
-    link: "https://github.com/yourname/project2",
-  },
-  {
-    title: "Project Three",
-    desc: "Startup-style product with animations.",
-    link: "https://github.com/yourname/project3",
-  },
-];
 
 const skills = [
   { name: "Angular", icon: "https://cdn.simpleicons.org/angular/DD0031" },
@@ -97,7 +71,6 @@ const App = () => {
 
   const y1 = useTransform(scrollYProgress, [0, 1], [50, -50]);
   const y2 = useTransform(scrollYProgress, [0, 1], [-30, 30]);
-  const blur = useTransform(scrollYProgress, [0, 1], ["0px", "15px"]);
 
   return (
     <div className="relative min-h-screen bg-black text-white overflow-x-hidden">
